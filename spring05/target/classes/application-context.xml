@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="mobile" class="org.kodnest.bean.Mobile">
+		<property name="brand" value="Nothing" />
+		<property name="ram" value="8gb" />
+		<property name="cost" value="41000" />
+	</bean>
+
+	<bean id="person" class="org.kodnest.bean.Person"
+		autowire="byName">
+		<property name="name" value="Ajith Kumar" />
+		<property name="age" value="22" />
+	</bean>
+</beans>
